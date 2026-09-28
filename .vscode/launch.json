@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Запуск api-analyzer",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/api-analyzer",
+            "args": ["--source", "${workspaceFolder}/test_api", "--format", "markdown", "--output", "api_documentation.md", "--report", "api_report.txt"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb"
+        }
+    ]
+}
